@@ -33,6 +33,8 @@ Route::prefix('users')->name('users.')->group(function () {
   Route::get('/{name}/likes', 'UserController@likes')->name('likes');
   Route::get('/{name}/followings', 'UserController@followings')->name('followings');
   Route::get('/{name}/followers', 'UserController@followers')->name('followers');
+  Route::get('/{name}/edit', 'UserController@edit')->name('edit');
+  Route::patch('/{name}/update', 'UserController@update')->name('update');
   Route::middleware('auth')->group(function () {
     Route::put('/{name}/follow', 'UserController@follow')->name('follow');
     Route::delete('/{name}/follow', 'UserController@unfollow')->name('unfollow');

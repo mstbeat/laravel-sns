@@ -13,6 +13,22 @@
         >
         </follow-button>
       @endif
+      @if( Auth::id() === $user->id )
+        <!-- Dropdown -->
+        <div class="ml-auto card-text">
+          <div class="dropdown">
+            <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-ellipsis-v"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="{{ route('users.edit', ['name' => $user->name]) }}">
+                <i class="fas fa-pen mr-1"></i>ユーザー情報を編集する
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Dropdown -->
+      @endif
     </div>
     <h2 class="h5 card-title m-0">
       <a href="{{ route('users.show', ['name' => $user->name]) }}" class="text-dark">

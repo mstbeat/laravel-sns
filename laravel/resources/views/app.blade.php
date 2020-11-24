@@ -7,6 +7,7 @@
   <title>
     @yield('title')
   </title>
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -16,8 +17,10 @@
 </head>
 
 <body>
-  <div id="app">
-    @yield('content')
+  <div class="bg">
+    <div id="app">
+      @yield('content')
+    </div>
   </div>
 
   <script src="{{ mix('js/app.js') }}"></script>

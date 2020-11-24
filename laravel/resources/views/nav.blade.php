@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand navbar-dark blue-gradient">
+<nav class="navbar navbar-expand navbar-dark peach-gradient">
 
   <a href="/" class="navbar-brand"><i class="far fa-sticky-note mr-1"></i>memo</a>
 

@@ -5,8 +5,12 @@
 @section('content')
   @include('nav')
   <div class="container">
-    @foreach($articles as $article)
-      @include('articles.card')
-    @endforeach
+    <div class="row">
+      @foreach($articles as $article)
+        <div class="col-sm-6">
+          @include('articles.card')
+        </div>
+      @endforeach
+    </div>
   </div>
 @endsection

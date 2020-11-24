@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -82,5 +83,21 @@ class UserController extends Controller
         $request->user()->followings()->detach($user);
 
         return ['name' => $name];
+    }
+
+    public function edit(string $name)
+    {
+        $user = User::where('name', $name)->first();
+
+        return view('users.edit', ['user' => $user]);
+    }
+
+    public function update(Request $request, string $name)
+    {
+        $user = User::where('name', $name)->first();
+
+        $user->fill($request->all())->save();
+
+        return redirect()->route('users.show', ['name' => $user->name]);
     }
 }
