@@ -4,7 +4,7 @@
 
 @section('content')
   @include('nav')
-  <div class="container">
+  <div class="container pb-3">
     <div class="row">
       @foreach($articles as $article)
         <div class="col-sm-6">

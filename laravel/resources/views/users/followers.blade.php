@@ -4,7 +4,7 @@
 
 @section('content')
   @include('nav')
-  <div class="container">
+  <div class="container pb-3">
     @include('users.user')
     <ul class="nav nav-tabs nav-justified mt-3">
       <li class="nav-item disabled">

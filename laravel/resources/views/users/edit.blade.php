@@ -15,7 +15,7 @@
               <form method="POST" action="{{ route('users.update', ['name' => $user->name]) }}">
                 @method('PATCH')
                 @include('users.form')
-                <button type="submit" class="btn btn-block blue-gradient mt-2 mb-2">更新する</button>
+                <button type="submit" class="btn btn-block peach-gradient mt-2 mb-2">更新する</button>
               </form>
             </div>
           </div>
