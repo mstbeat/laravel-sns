@@ -96,6 +96,15 @@ class UserController extends Controller
     {
         $user = User::where('name', $name)->first();
 
+        $uploadFile = $request->file('image');
+
+        if(!empty($uploadFile))
+        {
+            $fileName = $uploadFile->hashName();
+            $uploadFile->storeAs('public/users', $fileName);
+            $user->save();
+        }
+
         $user->fill($request->all())->save();
 
         return redirect()->route('users.show', ['name' => $user->name]);
