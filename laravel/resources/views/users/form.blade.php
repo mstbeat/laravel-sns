@@ -9,10 +9,10 @@
       <label for="email">メールアドレス</label>
       <input type="text" class="form-control" id="email" name="email" required value="{{ $user->email ?? old('email') }}">
     </div>
-    <div class="md-form">
+    <!-- <div class="md-form">
       <label for="image" class="active">画像</label>
       <input type="file" id="image" name="image">
-    </div>
+    </div> -->
     <!-- <div class="md-form">
       <label for="password">パスワード</label>
       <input type="password" class="form-control" id="password" name="password" required>

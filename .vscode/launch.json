@@ -11,7 +11,7 @@
       "port": 9001,
       "stopOnEntry": true,
       "pathMappings": {
-        "/var/www/html": "${workspaceFolder}/laradock/laravel"
+        "/var/www/html": "${workspaceRoot}"
       },
       "log": true
     },
@@ -29,7 +29,7 @@
       "request": "launch",
       "port": 9001,
       "pathMappings": {
-          "/var/www/html":"/Users/masato/projects/laravel-sns"
+          "/var/www/html":"${workspaceRoot}"
       }
     }
   ]

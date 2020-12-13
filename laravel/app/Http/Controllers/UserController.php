@@ -97,6 +97,8 @@ class UserController extends Controller
         $user = User::where('name', $name)->first();
 
         $uploadFile = $request->file('image');
+        var_dump("{$uploadFile}");
+
 
         if(!empty($uploadFile))
         {

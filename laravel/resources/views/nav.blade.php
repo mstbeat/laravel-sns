@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark peach-gradient">
 
-  <a href="/" class="navbar-brand"><i class="far fa-sticky-note mr-1"></i>memo</a>
+  <a href="/" class="navbar-brand"><i class="far fa-edit mr-1"></i>NoteApp</a>
 
   <ul class="navbar-nav ml-auto">
 
